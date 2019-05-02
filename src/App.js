@@ -6,6 +6,7 @@ import PriceList from './components/PriceList';
 import Button from 'antd/lib/button';
 import IconFont from './config/iconfont';
 
+
 const items = [
   {
     "id": 1,
@@ -14,8 +15,9 @@ const items = [
     "date":"2018-09-10",
     "category":{
       "id":"1",
-      "name":"旅行",
+      "name":"旅行",  
       "type":"outcome",
+      "iconName":"ios-plane",
     }
   },
   {
@@ -27,6 +29,7 @@ const items = [
       "id":"1",
       "name":"旅行",
       "type":"outcome",
+      "iconName":"ios-plane",
     }
   }
 ];
@@ -35,7 +38,6 @@ class App extends Component {
   render(){
     return (
       <div>
-        {/* <IconFont className="icon-test" type="iconDollar" /> */}
         <PriceList 
           items={items} 
           onModifyItem={(item)=>{alert(item.id)}}
