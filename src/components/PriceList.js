@@ -26,7 +26,7 @@ const PriceList=({items,onModifyItem,onDeleteItem}) =>{
                         <button className="col-1 btn btn-danger"
                             onClick={()=>{onDeleteItem(item)}}
                         >
-                            删除
+                            删除1
                         </button>
                     </li>
                 )) 
