@@ -1,8 +1,9 @@
 import React from 'react'
 import IconFont from '../config/iconfont'
 import Ionicon from 'react-ionicons'
+import PropTypes from 'prop-types'
 
-const PriceList=({items,onModifyItem,onDeleteItem}) =>{
+const PriceList=({ items, onModifyItem, onDeleteItem}) =>{
     return(
         <ul className="list-group,list-group-flush">
             {
@@ -55,4 +56,12 @@ const PriceList=({items,onModifyItem,onDeleteItem}) =>{
     )
 }
 
+PriceList.propTypes = {
+    items: PropTypes.array.isRequired,
+    onModifyItem: PropTypes.func.isRequired,
+    onDeleteItem: PropTypes.func.isRequired,
+}
+PriceList.defauleProps={
+    onModifyItem:()=>{}
+}
 export default PriceList;
