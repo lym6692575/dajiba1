@@ -1,5 +1,4 @@
 import React from 'react'
-import IconFont from '../config/iconfont'
 import Ionicon from 'react-ionicons'
 import PropTypes from 'prop-types'
 
@@ -9,7 +8,7 @@ const PriceList=({ items, onModifyItem, onDeleteItem}) =>{
             {
                items && items.map((item) => (
                     <li className="list-group-item d-flex 
-                        justify-content-between align-items-center"
+                        justify-content-between align-items-center m-auto"
                         key={item.id}
                         >
                         <span className="col-1" >
@@ -28,7 +27,8 @@ const PriceList=({ items, onModifyItem, onDeleteItem}) =>{
                         </span>
                         <span className="col-2">{item.date}</span>
                         <a className="col-1"
-                            onClick={()=>{onModifyItem(item)}}
+                            role="button"
+                            onClick={(event)=>{event.preventDefault(); onModifyItem(item)}}
                         >
                             <Ionicon
                                 className="rounded-circle"
@@ -39,7 +39,8 @@ const PriceList=({ items, onModifyItem, onDeleteItem}) =>{
                             />
                         </a>
                         <a className="col-1"
-                            onClick={()=>{onDeleteItem(item)}}
+                            role="button"
+                            onClick={(event)=>{event.preventDefault(); onDeleteItem(item)}}
                         >
                             <Ionicon
                                 className="rounded-circle"
