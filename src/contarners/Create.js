@@ -32,7 +32,7 @@ class CreatePage extends Component {
                 <div>
                     <Tabs />
                     <CategorySelect
-                        items={categories}
+                        categories={categories}
                     />
                 </div>
             </Router>
