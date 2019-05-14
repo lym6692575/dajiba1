@@ -35,7 +35,7 @@ const PriceList=({ items, onModifyItem, onDeleteItem}) =>{
                                 fontSize="30px"
                                 style={{backgroundColor:'#28a745', padding:'5px'}}
                                 color={'#fff'}
-                                icon='ios-create-outline'
+                                icon={item.category.iconName}
                             />
                         </a>
                         <a className="col-1"

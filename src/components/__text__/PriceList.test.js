@@ -17,7 +17,7 @@ const props = {
 let wrapper
 describe('test PriceList component', () => {
     beforeEach(() => {
-        wrapper = shallow(<priceList{...props} />)
+        wrapper = shallow(<PriceList{...props} />)
     })
     it('should render the component to match snapshot', () => {
         expect(wrapper).toMatchSnapshot()

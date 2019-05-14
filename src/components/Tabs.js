@@ -20,7 +20,7 @@ const ViewTab = ({ activeTab, onTabChange }) => (
           color={'#007bff'}
           icon='ios-paper'
         />
-        列表模式
+        收入
       </a>
     </li>
     <li className="nav-item">
@@ -35,7 +35,7 @@ const ViewTab = ({ activeTab, onTabChange }) => (
           color={'#007bff'}
           icon='ios-pie'
         />
-        图表模式
+        支出
       </a>
     </li>
   </ul>
